@@ -65,7 +65,7 @@
             <!--   this will make it fall down -->
             <freejoint />
             <geom name="fuselage" type="mesh" mesh="fuselage" euler="0 0 90" />
-<!--            <camera name="tracking_cam" mode="trackcom" pos="0 0 -50" target="quaid" />-->
+           <camera name="tracking_cam" mode="trackcom" pos="0 0 -50" target="quaid" />
             <site name="imu" size="0.01" pos="-0.95 -0.34 -0.08"/>
             <body name="front" pos="0 0 0" euler="0 0 90">
                 <geom name="bottom_link_front" type="mesh" mesh="bottom_link" />

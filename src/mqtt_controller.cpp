@@ -149,7 +149,7 @@ void MqttController::streamObservations() {
         client->publish(bin_msg);
 
         char cmd[150] = "";
-        sprintf(cmd, "S%ld,%ld,%.2f,%.2f,%.2f,%.2f,%.2f,%d,%d,%d,%d,%d,%d,%d,%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f",
+        sprintf(cmd, "S%lld,%ld,%.2f,%.2f,%.2f,%.2f,%.2f,%d,%d,%d,%d,%d,%d,%d,%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f",
                 time_delta,
                 // std::chrono::time_point_cast<std::chrono::milliseconds>(now).time_since_epoch().count(), // distance
                 0L,
